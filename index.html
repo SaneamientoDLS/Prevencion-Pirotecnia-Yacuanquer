@@ -11,17 +11,19 @@
             margin: 0;
             padding: 0;
             color: #333;
+            font-size: 18px;
         }
 
         header {
             background-color: #c62828;
             color: white;
             text-align: center;
-            padding: 20px 0;
+            padding: 20px 10px;
         }
 
         nav {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             background-color: #e8b7bf;
             padding: 10px;
@@ -30,8 +32,8 @@
         nav a {
             color: #b71c1c;
             text-decoration: underline;
-            margin: 0 20px;
-            font-size: 22px;
+            margin: 5px 15px;
+            font-size: 20px;
         }
 
         section {
@@ -73,14 +75,40 @@
             margin: 30px 0;
         }
 
+        .responsive-img {
+            width: 100%;
+            height: auto;
+            max-width: 800px;
+            display: block;
+            margin: 0 auto;
+        }
+
         footer {
             background-color: #c62828;
             color: white;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+        }
+
+        /* Mejora para móviles */
+        @media (max-width: 600px) {
+            body {
+                font-size: 20px;
+                padding: 10px;
+            }
+
+            nav a {
+                font-size: 20px;
+                margin: 5px 10px;
+            }
+
+            h1, h2 {
+                font-size: 26px;
+            }
+
+            .tips-list li {
+                font-size: 18px;
+            }
         }
     </style>
 </head>
@@ -100,7 +128,7 @@
     </nav>
 
     <div class="image-center">
-        <img src="https://imgur.com/yVbD7bD.jpg" width="700" alt="Imagen 1">
+        <img src="https://i.imgur.com/f5Z7mXs.jpg" alt="Imagen 1" class="responsive-img">
     </div>
 
     <section id="informacion">
@@ -144,7 +172,7 @@
     </section>
 
     <div class="image-center">
-        <img src="https://imgur.com/veOghzo.jpg" width="800" alt="Imagen 2">
+        <img src="https://i.imgur.com/zz8XJU9.jpg" alt="Imagen 2" class="responsive-img">
     </div>
 
     <section id="afectados">
@@ -159,7 +187,7 @@
     </section>
 
     <div class="image-center">
-        <img src="https://imgur.com/qIiG2W6.jpg" width="700" alt="Imagen 3">
+        <img src="https://i.imgur.com/LnDn8zv.jpg" alt="Imagen 3" class="responsive-img">
     </div>
 
     <section id="recomendaciones">
@@ -184,3 +212,4 @@
 
 </body>
 </html>
+Actualizado para mejorar visualización móvil
